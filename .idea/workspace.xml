@@ -1,31 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a49d15-4a78-45a5-ae2f-325b9b6361ec" name="Changes" comment="" />
+    <list default="true" id="91a49d15-4a78-45a5-ae2f-325b9b6361ec" name="Changes" comment="Solving tasks">
+      <change afterPath="$PROJECT_DIR$/Tест (Накопительные баллы)/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Slack/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1 Accumulativediscount cards(Накопительные баллы)/discount_calculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1 Accumulativediscount cards(Накопительные баллы)/test_discount_cflculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tест (Накопительные баллы)/test_discount_cflculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tест (Накопительные баллы)/test_discount_cflculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тестовое задание для тестировщика Главной страницы Яндекса/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Калькулятор выручки от продажи квартир в небоскрёбе/Калькулятор.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тестовое задание для тестировщика Главной страницы Яндекса/locators/page_locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тестовое задание для тестировщика Главной страницы Яндекса/pages/base_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тестовое задание для тестировщика Главной страницы Яндекса/pages/form_page.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Tест (Накопительные баллы)" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2czyadxK9Juuuh6uij8mAtmmGua" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_discount_cflculator.test_discount_calculator_with_valid_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Калькулятор.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Python tests for test_discount_cflculator.test_discount_calculator_with_valid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Техническо задание QA Engineer" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tест (Накопительные баллы)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_discount_cflculator.test_discount_calculator_with_valid_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_discount_cflculator.test_discount_calculator_with_valid_data" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -42,6 +98,19 @@
       <option name="presentableId" value="Default" />
       <updated>1709128766538</updated>
     </task>
+    <task id="LOCAL-00001" summary="Solving tasks">
+      <option name="closed" value="true" />
+      <created>1710187757886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710187757886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Solving tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving tasks" />
   </component>
 </project>
