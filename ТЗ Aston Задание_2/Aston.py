@@ -27,6 +27,7 @@ def compares_two_numbers(a, b):
     if a > b:
         return f'{a} > {b}'
     elif a < b:
+        print('a меньше b')
         return f'{a} < {b}'
     else:
         return f'{a} = {b}'
@@ -93,4 +94,5 @@ def run_code():
         print('Такой команды нет! Введите: 1, 2 или 3')
 
 
-run_code()
+if __name__ == "__main__":
+    run_code()
