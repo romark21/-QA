@@ -1,4 +1,4 @@
-#This repository collects some of the solutions to my technical assignments.
+This repository collects some of the solutions to my technical assignments.
 
 
 
