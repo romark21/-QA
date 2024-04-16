@@ -3,7 +3,7 @@ This repository collects some of the solutions to my technical assignments.
 
 
 
-1. In the folder "TK Aston Jobs_2" there is a program that calculates the revenue from the sale of apartments in a skyscraper.
+1. In the folder "ТЗ Aston Задание_2" there is a program that calculates the revenue from the sale of apartments in a skyscraper.
 Task Conditions.
 A construction company has built a skyscraper with N floors, and wants to calculate how much revenue it can get from the
 from the sale of all the apartments.
