@@ -1,9 +1,21 @@
 This repository collects some of the solutions to my technical assignments.
 
 
+1. Test task!
+
+The dispenser accepts accumulative discount cards and in its calculation takes into account the number of points, according to which it accrues a
+percentage of discount:
+From 0 to 100 points - 1% discount
+From 100 to 200 points - 3% discount
+From 200 to 500 points - 5% discount
+From 500 points - 10% discount
+
+Task: Create such a set of test data for the automaton, in which we are guaranteed to know,
+that the customer will receive the correct discount according to his accumulated points.
 
 
-1. In the folder "Калькулятор выручки от продажи квартир в небоскрёбе" there is a program that calculates the revenue from the sale of apartments in a skyscraper.
+
+2. In the folder "Калькулятор выручки от продажи квартир в небоскрёбе" there is a program that calculates the revenue from the sale of apartments in a skyscraper.
 Task Conditions.
 A construction company has built a skyscraper with N floors, and wants to calculate how much revenue it can get from the
 from the sale of all the apartments.
