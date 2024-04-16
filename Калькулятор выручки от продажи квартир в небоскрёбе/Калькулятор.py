@@ -55,6 +55,6 @@ def profit_calculator(n, m, x):
 def get_floor_list_for_print(value, m):
     return [i for i in range(value - m, value + 1)]
 
+
 # Для изменения входных данных, измените параметры: n, m, x
 print(f'Общая выручка от продажи всех квартир, составляет: {profit_calculator(30, 10, 10000)}$')
-
