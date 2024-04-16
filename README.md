@@ -1,7 +1,7 @@
 This repository collects some of the solutions to my technical assignments.
 
 
-1. In the folder "Test (Accumulative Points)"
+1. In the folder "Тест (Накопительные баллы)"
    Test task:
  The dispenser accepts accumulative discount cards and in its calculation takes into account the number of points, according to which it accrues a
 percentage of discount:
