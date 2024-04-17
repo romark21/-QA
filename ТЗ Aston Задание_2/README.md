@@ -15,5 +15,5 @@ console should display one of the messages: "The strings are non-identical" or "
 
 
                                             Task 3:
-An array of integers is given: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. It is necessary to write a program that will print all the
-even numbers.
+  Write a program that takes a number as input and outputs to the console all the
+even numbers in the range of the entered number (inclusive).
