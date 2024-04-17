@@ -1,97 +1,119 @@
 # coding: utf8
 """
-                                    Задание №1
-  Написать программу, которая принимает на вход два целых числа (a и b) и совершает с ними следующие действия:
-- сравнивает эти два числа и возвращает результат сравнения путем вывода в консоль одного из вариантов:
-"a > b", "a < b" или "a = b";
-
-- совершает с этими числами операции сложения, вычитания, деления и умножения и результат выводит в консоль.
-
-
-                                      Задание №2
-  Написать программу, которая принимает на вход две строки (a и b) и сравнивает их. В результате сравнения в консоль
-должно быть выведено одно из сообщений: "Строки неидентичны" или "Строки идентичны"
+                                    Task №1
+  Write a program that takes two integers (a and b) as input and performs the following actions with them:
+- compares these two numbers and returns the result of the comparison by outputting to the console one of the options:
+"a > b", "a < b" or "a = b";
+- performs addition, subtraction, division and multiplication operations with these numbers and outputs the result to
+the console.
 
 
+                                      Task №2
+  Write a program that takes two strings (a and b) as input and compares them. As a result of the comparison in the
+console should display one of the messages: "Strings are non-identical" or "Strings are identical"
 
-                                      Задание №3
-Задан массив целых чисел: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Необходимо написать программу, которая выведет в консоль все
-чётные числа.
+
+
+                                      Task №3
+  Write a program that takes a number as input and outputs to the console all the
+even numbers in the range of the entered number (inclusive).
 """
 
 
-# Запустить код, затем следовать командам в консоли.
+#  Запустить код, затем следовать командам в консоли.
+#  Run the code, then follow the commands in the console
+
+class Task1:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def compares_two_numbers(self):
+        if self.a > self.b:
+            return f'{self.a} > {self.b}'
+        elif self.a < self.b:
+            return f'{self.a} < {self.b}'
+        else:
+            return f'{self.a} = {self.b}'
+
+    def additions_numbers(self):
+        return f'{self.a} + {self.b} = {self.a + self.b}'
+
+    def subtraction_numbers(self):
+        return f'{self.a} - {self.b} = {self.a - self.b}'
+
+    def division_numbers(self):
+        if self.b == 0:
+            return f'Division by zero, impossible!'
+        else:
+            return f'{self.a} : {self.b} = {self.a / self.b}'
+
+    def multiplication_numbers(self):
+        return f'{self.a} * {self.b} = {self.a * self.b}'
 
 
-def compares_two_numbers(a, b):
-    if a > b:
-        return f'{a} > {b}'
-    elif a < b:
-        print('a меньше b')
-        return f'{a} < {b}'
-    else:
-        return f'{a} = {b}'
+class Task2:
+    def __init__(self, string_1, string_2):
+        self.string_1 = string_1
+        self.string_2 = string_2
+
+    def compares_two_strings(self):
+        if self.string_1 == self.string_2:
+            return 'The strings are identical!'
+        else:
+            return 'The strings are non-identical!'
 
 
-def additions_numbers(a, b):
-    return f'{a} + {b} = {a + b}'
+class Task3:
 
+    def __init__(self, num):
+        self.num = num
 
-def subtraction_numbers(a, b):
-    return f'{a} - {b} = {a - b}'
+    def __generate_list__(self):
+        result = [_ for _ in range(self.num + 1)]
+        return result
 
+    def even_numbers(self):
+        generated_list = self.__generate_list__()
 
-def division_numbers(a, b):
-    if b == 0:
-        return f'Деление на ноль, невозможно!'
-    else:
-        return f'{a} : {b} = {a / b}'
-
-
-def multiplication_numbers(a, b):
-    return f'{a} * {b} = {a * b}'
-
-
-def compares_two_strings(string_1, string_2):
-    if string_1 == string_2:
-        return 'Строки идентичны!'
-    else:
-        return 'Строки неидентичны!'
-
-
-def even_numbers():
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    return (num for num in numbers if num % 2 == 0)
+        return (num for num in generated_list if num % 2 == 0)
 
 
 def run_code():
     separate = '----' * 30
-    choice_of_task = int(input('Какое задание вы хотите выполнить?:\n'
-                               '1 - Задание №1\n'
-                               '2 - Задание №2\n'
-                               '3 - Задание №3\n'
-                               'Введите номер команды: '))
+    choice_of_task = int(input('Which task do you want to do?\n'
+                               '1 - Task №1\n'
+                               '2 - Task №2\n'
+                               '3 - Task №3\n'
+                               'Enter the command number: '))
     print(separate)
     if choice_of_task == 1:
-
-        a = int(input('Введите первое число: '))
-        b = int(input('Введите второе число: '))
-
-        print(compares_two_numbers(a, b))
-        print(additions_numbers(a, b))
-        print(subtraction_numbers(a, b))
-        print(division_numbers(a, b))
-        print(multiplication_numbers(a, b))
+        try:
+            a = int(input('Enter the first number: '))
+            b = int(input('Enter the second number: '))
+            task_1 = Task1(a, b)
+            print(task_1.compares_two_numbers())
+            print(task_1.additions_numbers())
+            print(task_1.subtraction_numbers())
+            print(task_1.division_numbers())
+            print(task_1.multiplication_numbers())
+        except ValueError:
+            print('Error! Enter a number or the field must not be empty.')
 
     elif choice_of_task == 2:
-        string_1 = input('Введите первую строку: ')
-        string_2 = input('Введите вторую строку: ')
-        print(compares_two_strings(string_1, string_2))
+        string_1 = input('Enter the first string: ')
+        string_2 = input('Enter the second string: ')
+        task_2 = Task2(string_1, string_2)
+        print(task_2.compares_two_strings())
 
     elif choice_of_task == 3:
-        print(f'Чётными числами являются:', *even_numbers())
+        a = int(input('Enter a number that is a range of even numbers.\n'
+                      'The search is performed from 0 to the value you entered (inclusive): '))
+        task_3 = Task3(a)
+        print(f'Even numbers are:', *task_3.even_numbers())
+
     else:
-        print('Такой команды нет! Введите: 1, 2 или 3')
+        print('There is no such command! Enter: 1, 2 or 3')
 
 
 if __name__ == "__main__":
