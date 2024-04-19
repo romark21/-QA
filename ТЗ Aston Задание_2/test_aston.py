@@ -45,7 +45,7 @@ def test_subtraction_numbers(value_1, value_2, expected):
     assert t_1.subtraction_numbers() == expected, 'The actual result does not match the expected!'
 
     exception = Task1('e', '')
-    with pytest.raises(Exception) as e:  # Ожидаем, что будет выброшено исключение TypeError.
+    with pytest.raises(Exception):  # Ожидаем, что будет выброшено исключение TypeError.
         assert exception.subtraction_numbers(), ''
 
 
@@ -66,11 +66,22 @@ def test_division_numbers(value_1, value_2, expected):
                           ('10', '10', 'The strings are identical!'),
                           ('qwer ty@123456', 'qwer ty@123456', 'The strings are identical!'),
                           ('Test', 'test', 'The strings are non-identical!'),
-                          ('system','System', 'The strings are non-identical!'),
-                          ('1', '-1', 'The strings are non-identical!')])
+                          ('system', 'System', 'The strings are non-identical!'),
+                          ('1', '-1', 'The strings are non-identical!'),
+                          (' ', '  ', 'The strings are non-identical!')])
 def test_compares_two_strings(string_1, string_2, expected):
     t_2 = Task2(string_1, string_2)
     assert t_2.compares_two_strings() == expected
+
+
+@pytest.mark.task_3
+@pytest.mark.parametrize('value, expected',
+                         [(6, [0, 2, 4, 6]),
+                          (9, [0, 2, 4, 6, 8]),
+                          (11, [0, 2, 4, 6, 8, 10])])
+def test_even_numbers(value, expected):
+    t_3 = Task3(value)
+    assert t_3.even_numbers() == expected
 
 
 """

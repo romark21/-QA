@@ -74,9 +74,10 @@ class Task3:
         return result
 
     def even_numbers(self):
-        generated_list = self.__generate_list__()
+        generate_list = self.__generate_list__()
+        result = [num for num in generate_list if num % 2 == 0]
 
-        return (num for num in generated_list if num % 2 == 0)
+        return result
 
 
 def run_code():
